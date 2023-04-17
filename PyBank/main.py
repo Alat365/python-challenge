@@ -54,6 +54,9 @@ analysis = [str(f'Finanical Analysis'),
             str(f'\nGreatest Decrease in Profits: {date[min_change_date]} (${minimum})')
 ]
 
+#Printing Analysis in Terminal
+print(*analysis)
+
 #Creating path for new .txt file
 financial_analysis = os.path.join('python-challenge','PyBank','analysis','Financial Analysis.txt')
 
