@@ -41,7 +41,6 @@ with open(electiondata) as csvfile:
     #Determining Winner
     vote_count = {indiv_candidates[0]:candidate1,indiv_candidates[1]:candidate2,indiv_candidates[2]:candidate3}
     
-    #Found online how to find max value in dict and return key for winner
     winner = max(vote_count, key=vote_count.get)
 
 
