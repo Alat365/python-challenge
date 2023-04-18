@@ -3,7 +3,7 @@ import os
 import csv
 
 #Setting Variable for path to election_data.csv
-electiondata=os.path.join('python-challenge','PyPoll','Resources','election_data.csv')
+electiondata=os.path.join('Resources','election_data.csv')
 
 
 #Reading election_data.csv file
@@ -57,11 +57,11 @@ results = [str(f'Election Results'),
             str(f'\n----------------------------')
 ]
 
-
+#Printing Results in terminal
 print(*results)
 
 #Creating path for new .txt file
-election_results = os.path.join('python-challenge','PyPoll','analysis','Election Results.txt')
+election_results = os.path.join('analysis','Election Results.txt')
 
 #Generating new .txt file for results
 def data_analysis(parameter):

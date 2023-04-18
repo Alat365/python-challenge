@@ -3,7 +3,7 @@ import os
 import csv
 
 #Setting Variable for path to budget_data.csv
-budgetdata=os.path.join('python-challenge','PyBank','Resources','budget_data.csv') 
+budgetdata=os.path.join('Resources','budget_data.csv') 
 
 #Reading budget_data.csv file
 with open(budgetdata) as csvfile:
@@ -49,7 +49,7 @@ analysis = [str(f'Finanical Analysis'),
             str(f'\n----------------------------'),
             str(f'\nTotal Months: {total_months}'),
             str(f'\nTotal: ${net_value}'),
-            str(f'\nAverage Change: ${round(average_change,2)}'), #looked up round()
+            str(f'\nAverage Change: ${round(average_change,2)}'),
             str(f'\nGreatest Increase in Profits: {date[max_change_date]} (${maximum})'),
             str(f'\nGreatest Decrease in Profits: {date[min_change_date]} (${minimum})')
 ]
@@ -58,7 +58,7 @@ analysis = [str(f'Finanical Analysis'),
 print(*analysis)
 
 #Creating path for new .txt file
-financial_analysis = os.path.join('python-challenge','PyBank','analysis','Financial Analysis.txt')
+financial_analysis = os.path.join('analysis','Financial Analysis.txt')
 
 #Generating new .txt file for results
 def data_analysis(parameter):

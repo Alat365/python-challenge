@@ -1,1 +1,2 @@
 # python-challenge
+# In this Module, I had mainly worked on it just using material from class and by rewatching lectures. Otherwise, the only thing I needed to look up was some formatting functions and the "list(dict.fromkeys())" function that helped turn the list of candidates into a dictionary and then reverting it back to a list. By converting the list of all the names into a dictionary, the duplicate names were removed automatically and turning it back into a normal list left me with the three candidates and helped me reference it later in my script.
